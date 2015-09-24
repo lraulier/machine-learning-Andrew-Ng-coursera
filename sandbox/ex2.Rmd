@@ -3,18 +3,33 @@ title: "ex2"
 output: html_document
 ---
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+chargement des données à traiter.
+colonne 1 : résultat exam1
+colonne 2 : résultat exam2
+colonne 3 : 1/ passe , 0/ne passe pas
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+changer working directory si nécessaire
+
+charger les données ex2data1.txt
 
 ```{r}
-summary(cars)
+working.directory <- "E:/data/Rproject/machine-learning-Andrew-Ng-coursera"
+setwd(working.directory)
+examen.resultat <- read.csv("ex2data1.txt",header=FALSE)
+View(examen.resultat)
 ```
 
-You can also embed plots, for example:
 
-```{r, echo=FALSE}
-plot(cars)
+séparer les données résultats col1,col2) et la 'sanction' (passe/ne passe pas).
+
+```{r}
+examen.resultat.notes <- examen.resultat[,1:2]
+examen.resultat.admission <- examen.resultat[,3]
 ```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+visualisation rapide des données
+```{r}
+# @todo améliorer le graphe 
+ plot(examen.resultat.notes[,1],examen.resultat.notes[,2])
+```
+
