@@ -55,3 +55,9 @@ examen.resultat.notes.matrice.intercept <- cbind(intercept.term,examen.resultat.
 head(examen.resultat.notes.matrice.intercept
 ```
 
+initialisation paramètre theta
+
+```{r}
+initial.theta <- as.matrix(rep.int(0,dim(examen.resultat.notes.matrice.intercept)[2]))
+```
+
