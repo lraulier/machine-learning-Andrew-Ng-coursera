@@ -33,3 +33,14 @@ visualisation rapide des données
  plot(examen.resultat.notes[,1],examen.resultat.notes[,2])
 ```
 
+transformer les data.frames en matrice
+cela permettra de vectoriser nos formule
+
+```{r}
+examen.resultat.notes.matrice <- as.matrix(examen.resultat.notes)
+class(examen.resultat.notes.matrice)
+dim((examen.resultat.notes.matrice))
+examen.resultat.admission.matrice <- as.matrix(examen.resultat.admission)
+dim(examen.resultat.admission.matrice)
+```
+
