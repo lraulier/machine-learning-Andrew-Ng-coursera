@@ -44,3 +44,14 @@ examen.resultat.admission.matrice <- as.matrix(examen.resultat.admission)
 dim(examen.resultat.admission.matrice)
 ```
 
+ajouter colonne pour 'intercept term' : empêcher l'hypothese (function) de passer par l'origine (0,0)
+function ones() d'octave n'a pas d'équivalent dans R
+
+```{r}
+intercept.term <- rep.int(1,dim(examen.resultat.notes.matrice)[1])
+# ajout de la colonne intercept.term 
+examen.resultat.notes.matrice.intercept <- cbind(intercept.term,examen.resultat.notes.matrice)
+#  aperçu
+head(examen.resultat.notes.matrice.intercept
+```
+
