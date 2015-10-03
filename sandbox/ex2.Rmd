@@ -52,7 +52,7 @@ intercept.term <- rep.int(1,dim(examen.resultat.notes.matrice)[1])
 # ajout de la colonne intercept.term 
 examen.resultat.notes.matrice.intercept <- cbind(intercept.term,examen.resultat.notes.matrice)
 #  aperçu
-head(examen.resultat.notes.matrice.intercept
+head(examen.resultat.notes.matrice.intercept)
 ```
 
 initialisation paramètre theta
@@ -60,4 +60,12 @@ initialisation paramètre theta
 ```{r}
 initial.theta <- as.matrix(rep.int(0,dim(examen.resultat.notes.matrice.intercept)[2]))
 ```
+
+
+costFunction(initial_theta, X, y)
+simulation de la function
+
+1. function hypothesis
+
+
 
