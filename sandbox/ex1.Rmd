@@ -33,3 +33,19 @@ problem.data <- read.table(url,header = FALSE,sep = ",",dec = ".")
 head(problem.data)
 ```
 
+définition de X (paramètre) et y (variable à prédire)
+
+```{r}
+problem.data.X <- problem.data[,1]
+problem.data.y <- problem.data[,2]
+```
+
+Plot data
+
+```{r}
+# x axis n'a pas le meme interval que l'original
+# @todo pour le fun 
+plot(problem.data.X,problem.data.y,pch = "+",col = "red",xlab = "Population of City in 10,000s", ylab = "Profit in $10,000s")
+# axis(side=1, at=seq(4, 24, by=2))
+```
+
