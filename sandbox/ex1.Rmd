@@ -27,7 +27,7 @@ class(A)
 chargement des données du fichier ex1data1.txt
 
 ```{r}
-url <- "ex1data1.txt"
+url <- "../ex1data1.txt"
 # fichier de 2 colonnes séparé par une virgule , séparateur décimaux = . (point)
 problem.data <- read.table(url,header = FALSE,sep = ",",dec = ".")
 head(problem.data)
@@ -48,4 +48,10 @@ Plot data
 plot(problem.data.X,problem.data.y,pch = "+",col = "red",xlab = "Population of City in 10,000s", ylab = "Profit in $10,000s")
 # axis(side=1, at=seq(4, 24, by=2))
 ```
+
+
+pour comparaison
+
+# Inline
+![plot de la population ~ profit](../profitPlot.png "plot population Vs Profit")
 
