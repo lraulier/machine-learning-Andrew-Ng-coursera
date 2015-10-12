@@ -1,0 +1,25 @@
+---
+title: "ex1"
+author: "kzone.talend"
+date: "October 12, 2015"
+output: html_document
+---
+
+# introduction
+
+Ce tutoriel est une adaptation du cours donnée par Andrew Ng sur le machine Learning pour R.
+Il n'est qu'une traduction des exercices proposés sur Octave au logiciel R.
+En cela il ne remplace en RIEN les video et conseils de ce cours. Vous devrez visionner ce cours pour comprendre ces différents exercices ;)
+
+## identity matrix
+
+fonction octave 
+eye(5) =  identity matrix 5x5
+
+```{r}
+A <- diag(5)
+class(A)
+```
+
+
+## linear regression with one variable
