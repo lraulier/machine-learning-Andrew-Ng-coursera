@@ -13,7 +13,9 @@ changer working directory si nécessaire
 charger les données ex2data1.txt
 
 ```{r}
-working.directory <- "E:/data/Rproject/machine-learning-Andrew-Ng-coursera"
+# on windos
+#working.directory <- "E:/data/Rproject/machine-learning-Andrew-Ng-coursera"
+working.directory <- "~/GIT/machine-learning-Andrew-Ng-coursera"
 setwd(working.directory)
 examen.resultat <- read.csv("ex2data1.txt",header=FALSE)
 View(examen.resultat)
