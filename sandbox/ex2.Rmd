@@ -30,8 +30,16 @@ examen.resultat.admission <- examen.resultat[,3]
 visualisation rapide des données
 ```{r}
 # @todo améliorer le graphe 
- plot(examen.resultat.notes[,1],examen.resultat.notes[,2])
+# todo1 : simple => je like 
+# inverser la sequence examen.resultat.admission pour avoir en rouge les 'pas -admis'
+ plot(examen.resultat.notes[,1],examen.resultat.notes[,2], col = as.factor(!examen.resultat.admission),pch = c(3,16)[as.factor(!examen.resultat.admission)],xlab = "resultat exam 1",ylab = "resultat exam 2")
 ```
+
+
+A titre de comparaison le plot réalisé avec 'octave'
+
+# Inline
+![plot des étudiants admis ou pas selon 2 notes](../admissionPlot.png "Scatterplot of training data")
 
 transformer les data.frames en matrice
 cela permettra de vectoriser nos formule
