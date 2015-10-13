@@ -41,6 +41,7 @@ problem.data.y <- problem.data[,2]
 ```
 
 Plot data
+Scatter plot of training data
 
 ```{r}
 # x axis n'a pas le meme interval que l'original
@@ -54,4 +55,8 @@ pour comparaison
 
 # Inline
 ![plot de la population ~ profit](../profitPlot.png "plot population Vs Profit")
+
+
+## Gradient descent
+fixer les paramètres **$\theta$** pour la regression linéaire en utilisant le 'gradient descent'
 
