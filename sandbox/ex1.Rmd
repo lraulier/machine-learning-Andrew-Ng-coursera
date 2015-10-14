@@ -27,7 +27,7 @@ class(A)
 chargement des données du fichier ex1data1.txt
 
 ```{r}
-url <- "../ex1data1.txt"
+url <- "ex1data1.txt"
 # fichier de 2 colonnes séparé par une virgule , séparateur décimaux = . (point)
 problem.data <- read.table(url,header = FALSE,sep = ",",dec = ".")
 head(problem.data)
@@ -59,4 +59,13 @@ pour comparaison
 
 ## Gradient descent
 fixer les paramètres **$\theta$** pour la regression linéaire en utilisant le 'gradient descent'
+
+```{r}
+# traveil avec des matrices pour vectorsation
+problem.data.X.matrice <- as.matrix(problem.data.X)
+dim(problem.data.X.matrice)
+problem.data.y.matrice <- as.matrix(problem.data.y)
+dim(problem.data.y.matrice)
+problem.data.y.nbre <- NROW(problem.data.y.matrice) # nrow pour un data.frame
+```
 
