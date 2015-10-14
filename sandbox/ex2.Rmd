@@ -44,7 +44,7 @@ A titre de comparaison le plot réalisé avec 'octave'
 ![plot des étudiants admis ou pas selon 2 notes](../admissionPlot.png "Scatterplot of training data")
 
 transformer les data.frames en matrice
-cela permettra de vectoriser nos formule
+cela permettra de vectoriser nos formules
 
 ```{r}
 examen.resultat.notes.matrice <- as.matrix(examen.resultat.notes)
