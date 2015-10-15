@@ -27,7 +27,7 @@ class(A)
 chargement des données du fichier ex1data1.txt
 
 ```{r}
-url <- "ex1data1.txt"
+url <- "../ex1data1.txt"
 # fichier de 2 colonnes séparé par une virgule , séparateur décimaux = . (point)
 problem.data <- read.table(url,header = FALSE,sep = ",",dec = ".")
 head(problem.data)
@@ -84,7 +84,7 @@ class(problem.data.X)
 rappel ce sont les paramètres à déterminer pour réduire le cout de notre regression linéaire.
 
 ```{r}
-problem.data.initial.theta <- rep.int(0,dim(problem.data.X)[2])
+problem.data.initial.theta <- as.matrix(rep.int(0,dim(problem.data.X)[2]))
 ```
 
 autres paramètres : iteration et alpha
