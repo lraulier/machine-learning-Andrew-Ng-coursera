@@ -69,3 +69,13 @@ dim(problem.data.y.matrice)
 problem.data.y.nbre <- NROW(problem.data.y.matrice) # nrow pour un data.frame
 ```
 
+## intercept term 
+
+ajout d'une colonne avec la valeur 1 à la matrice X
+
+```{r}
+problem.data.intercept.term <- rep.int(1,problem.data.y.nbre)
+problem.data.X <- cbind(problem.data.intercept.term,problem.data.X)
+class(problem.data.X)
+```
+
