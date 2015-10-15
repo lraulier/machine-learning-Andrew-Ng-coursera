@@ -87,3 +87,10 @@ rappel ce sont les paramètres à déterminer pour réduire le cout de notre reg
 problem.data.initial.theta <- rep.int(0,dim(problem.data.X)[2])
 ```
 
+autres paramètres : iteration et alpha
+
+```{r}
+problem.data.iteration <- 1500
+problem.data.alpha <- 0.01
+```
+
