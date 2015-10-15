@@ -79,3 +79,11 @@ problem.data.X <- cbind(problem.data.intercept.term,problem.data.X)
 class(problem.data.X)
 ```
 
+## initialisation des paramètres theta 
+
+rappel ce sont les paramètres à déterminer pour réduire le cout de notre regression linéaire.
+
+```{r}
+problem.data.initial.theta <- rep.int(0,dim(problem.data.X)[2])
+```
+
